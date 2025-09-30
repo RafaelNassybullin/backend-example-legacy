@@ -1,0 +1,79 @@
+{
+  "name": "backend-example-legacy",
+  "version": "8.8.8",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=dev node index.js",
+    "start-dev": "NODE_ENV=dev nodemon index.js",
+    "test": "NODE_ENV=test node node_modules/.bin/jest --runInBand --silent --detectOpenHandles --verbose --forceExit --no-cache --watchAll",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json}\"",
+    "check-pretty": "prettier --check \"./**/*.{js,jsx,json}\"",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "argon2": "^0.41.1",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.19.1",
+    "busboy": "^1.6.0",
+    "cookie-parser": "~1.4.6",
+    "cors": "^2.8.5",
+    "debug": "~4.3.3",
+    "express": "^4.21.2",
+    "express-async-errors": "^3.1.1",
+    "express-http-context": "^1.2.4",
+    "express-useragent": "^1.0.15",
+    "express-validator": "^6.14.1",
+    "http-errors": "~2.0.0",
+    "jimp": "^0.22.10",
+    "jsonwebtoken": "^9.0.0",
+    "lodash": "^4.17.21",
+    "log4js": "^6.5.2",
+    "luxon": "^3.5.0",
+    "marked": "^4.0.12",
+    "morgan": "~1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.0",
+    "pg": "^8.13.3",
+    "pg-template-tag": "^0.1.2",
+    "postgres-pool": "^9.0.6",
+    "punycode": "^2.3.1",
+    "supertest": "^6.2.3",
+    "swagger-jsdoc": "^6.2.1",
+    "swagger-ui-express": "^4.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/eslint-parser": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.5.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-security": "^1.5.0",
+    "jest": "^28.1.1",
+    "nodemon": "^3.0.1",
+    "prettier": "^2.7.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/*.test.js"
+    ],
+    "testPathIgnorePatterns": [
+      "config"
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    }
+  }
+}
