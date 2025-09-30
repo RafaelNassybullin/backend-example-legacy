@@ -1,7 +1,7 @@
 
 ## Инструкция для установки и запуска API. 
 
-1) **Клонируем репозиторий: clone https://gitlab.com/rafaelnassybullin/backend-example-legacy**
+1) **Клонируем репозиторий
 2) **Открываем проект в редакторе**
 3) **Устанавливаем модули:** 
 ```
@@ -36,7 +36,7 @@ npm run test
 npm run start
 ```
 
-* страница с репозиторием - 
+* страница с репозиторием - https://github.com/RafaelNassybullin/backend-example-legacy/edit
 * страница с этим описанием - http://localhost:2114/v1
 * страница с документацией - http://localhost:2114/v1/docs
 
